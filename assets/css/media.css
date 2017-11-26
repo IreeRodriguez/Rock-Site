@@ -1,0 +1,25 @@
+@media (min-width: 535px) and (max-width: 824px) {
+    [class*='col-']{
+        width: 100%;
+    }
+    body{
+        background-color: coral;
+    }
+    img{
+        border: 5px solid white;
+        content: url(https://files.slack.com/files-pri/T0NNB6T0R-F84J25NDN/plaza_de_armas_medias.jpg)
+    }
+
+}
+@media (max-width: 535px) {
+    [class*='col-']{
+        width: 100%;
+    }
+    body{
+        background-color: LightSkyBlue;
+    }
+    img{
+        display: none;
+    }
+
+}
