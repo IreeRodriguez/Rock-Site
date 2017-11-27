@@ -1,49 +1,68 @@
 body{
     font-family: sans-serif;
-    background-color: #F78E69;
     color: white;
 
 }
-header, footer{
-    text-align: right;
-    padding: 2em 1.5em 2em;
+nav, footer{
+    background-color: #343A40;
+    padding: 1em 3em 1em;
 }
+a{
+    color: lightgray;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    font-weight: bold;
+}
+
 .bigPhoto{
     width: 100%;
-    height: 25em;
-    object-fit: none;
-}
-.bigPhoto2{
-    width: 100%;
-    height: 30em;
+    height: 20em;
     object-fit: cover;
+    -webkit-filter: grayscale(70%);
+    position: relative;
+}
+.overtext{
+    position: absolute;
+    left: 0;
+    bottom: 60%;
+    line-height: 3em;
 }
 section{
-    padding: 0;
-    margin: 0;
-}
-.green{
-    background-color: #ABE188;
-    margin: 0.8em 0 0.8em;
     padding: 2em;
+    margin: 0;
+    color: gray;
 }
 .centered{
     display: flex;
-    justify-content: center;
-    padding: 1em;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /*padding: 1em;*/
 }
 .centered>*{
     text-align: center;
+    align-self: center;
+}
+.smallPhoto{
+    border-radius: 50%;
+    height: 20em;
+    object-fit: cover;
+}
+.pad{
+    padding: 0 1em 0;
 }
 .text{
-    background-color: #F78E69;
-    padding: 1em;
-    text-align: center;
-    width: 50%;
+    padding: 0 3em 0;
+    text-align: left;
 }
 h3{
-    text-align: center;
+    text-align: left;
 }
 .smallPhoto{
     border: 0.5em solid white;
+}
+.hidden{
+    display: none;
+    align-self: center;
 }
